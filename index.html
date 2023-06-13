@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML API's</title>
+</head>
+<body>
+    <h3>Upload your video</h3>
+    <div id="div-video">
+        <input type="file" name="file" id="file" accept="video/*">
+        <output id="videoOutput"></output>
+    </div>
+    <div id="buttons">
+        <button onclick="document.getElementById('video').play();" id="play" style="visibility: hidden">►</button>
+        <button onclick="document.getElementById('video').pause();"  id="pause" style="visibility: hidden">II</button>
+        <button onclick="document.getElementById('video').volume += 0.1;"  id="volumeUp"  style="visibility: hidden">+ VOL.</button>
+        <button onclick="document.getElementById('video').volume -= 0.1;"  id="volumeDown" style="visibility: hidden">- VOL.</button>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
